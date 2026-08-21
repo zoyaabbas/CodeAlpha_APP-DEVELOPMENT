@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+
+  background: #f4f4f4;
+}
+
+.quote-container {
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.quote-card {
+  background: white;
+  padding: 45px 35px;
+  border-radius: 15px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+#quote {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  transition: font-size 0.4s ease;
+}
+
+#author {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  transition: opacity 0.4s ease;
+}
+
+button {
+  padding: 12px 25px;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  background: #222;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .quote-card {
+    padding: 30px 20px;
+  }
+
+  #quote {
+    font-size: 20px;
+  }
+
+  #author {
+    font-size: 16px;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
